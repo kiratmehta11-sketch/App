@@ -1,0 +1,42 @@
+{
+  "name": "project-manager-api",
+  "version": "1.0.0",
+  "description": "Project management REST API with role-based access control",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:migrate": "node dist/database/migrate.js"
+  },
+  "keywords": [
+    "project",
+    "task",
+    "management",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.11.18",
+    "@types/pg": "^8.9.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
